@@ -7,9 +7,11 @@ y = np.array([[0.0],[0.3],[0.5],[0.25]])
 
 model = Sequential()
 
-model.add(Dense(1, input_dim=2, activation='sigmoid'))
+model.add(Dense(5, input_dim=2, activation='tanh'))
+model.add(Dense(3,input_dim=3,activation='tanh'))
+model.add(Dense(1,activation='sigmoid'))
+
 model.compile(optimizer='adam',loss ='mse', metrics=['acc'])
 model.fit(x,y,epochs=5000)
 
 print(model.predict(x))
-
