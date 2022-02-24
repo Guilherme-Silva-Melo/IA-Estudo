@@ -8,6 +8,8 @@ authors = ["Gui Melo <guilherme.melo@solucaut.com.br>"]
 python = ">=3.10,<3.11"
 tensorflow = "^2.8.0"
 pandas = "^1.4.1"
+matplotlib = "^3.5.1"
+scikit-learn = "^1.0.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
